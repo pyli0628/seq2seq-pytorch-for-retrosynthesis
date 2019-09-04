@@ -1,0 +1,5 @@
+#train
+python3 source/run.py --gpu 0 --datadir data/ --learning_rate 0.001 --hidden_size 128 --batch_size 32 --dropout 0.2
+
+python3 source/run.py --gpu 0 --datadir data/del_rxn/ --vocab_size 55
+python source/run.py --datadir data/smile2smart/ --learning_rate 0.001 --hidden_size 256 --batch_size 50 --dropout 0.2 --vocab_size 60 --model 1 --gpu 1
